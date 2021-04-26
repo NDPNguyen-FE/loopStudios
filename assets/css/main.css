@@ -12,7 +12,7 @@
   --body-font: "Josefin Sans", sans-serif;
   --title-font: "Alata", sans-serif;
   /* ============ font-weight =========== */
-  --font-semi-bold: 400;
+  --font-semi-bold: 700;
   --font-semi: 300;
   /* ============ margin =========== */
   --mb-1: 0.5rem;
@@ -54,7 +54,11 @@ img {
 /* ===================== Class CSS ======================= */
 
 .section {
-  padding: 4rem 0 3rem;
+  padding: 3rem 0 2rem;
+}
+h2 {
+  text-transform: uppercase;
+  margin-bottom: var(--mb-2);
 }
 
 /* ===================== Layout ======================= */
@@ -90,7 +94,7 @@ img {
   align-items: center;
   padding: var(--mb-2) var(--mb-4);
   font-family: var(--body-font);
-  font-weight: var(--font-semi-bold);
+  font-weight: var(--font-semi);
 }
 .nav__logo {
   z-index: var(--z-tooltip);
@@ -99,6 +103,7 @@ img {
 .nav__toggle {
   color: var(--title-firts-color);
   z-index: var(--z-tooltip);
+  cursor: pointer;
 }
 
 .nav__link {
@@ -149,3 +154,42 @@ img {
 }
 
 /* ============= About ============= */
+.about {
+  display: flex;
+  justify-content: center;
+}
+.about__img {
+  justify-self: center;
+}
+.about__content {
+  flex-direction: column;
+  text-align: center;
+}
+
+.about__content p {
+  color: var(--footer-text-color);
+  font-family: var(--body-font);
+  line-height: 1.5rem;
+  font-weight: var(--font-semi-bold);
+}
+/* ============= Products ============= */
+.product {
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.img__item {
+  position: relative;
+  justify-self: center;
+}
+.img__title {
+  position: absolute;
+  color: var(--title-firts-color);
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  width: 35%;
+  text-align: left;
+  padding-left: var(--mb-3);
+  font-weight: var(--font-semi);
+  bottom: 2rem;
+}
